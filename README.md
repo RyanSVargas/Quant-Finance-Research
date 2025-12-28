@@ -7,5 +7,10 @@ This repository contains professional-grade financial models developed to analyz
 * **Math:** Calculated Log-Returns to ensure statistical stationarity.
 * **Result:** Successfully mapped the decoupling of BTC-USD from traditional safe-havens like Gold in late 2025.
 
-## Project 2: SMA Crossover Strategy (Coming Soon)
-* Backtesting moving average strategies on high-cap equities.
+## Project 2: Apple (AAPL) Momentum Strategy
+* **Methodology:** Developed a 50/200-day Simple Moving Average (SMA) crossover backtest.
+* **Risk Metrics:** Achieved an **Annualized Sharpe Ratio of 0.86**.
+* **Drawdown:** Identified a **Maximum Drawdown of -24.58%**, highlighting the strategy's volatility during market shifts.
+
+## Project 3: Risk-Parity Portfolio (Next Phase)
+* Integrating correlation data with volatility scaling to optimize asset allocation.
