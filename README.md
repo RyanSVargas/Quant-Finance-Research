@@ -23,3 +23,9 @@ This repository contains professional-grade financial models developed to analyz
 * **Logic:** Proved that Inverse-Volatility weighting can capture Bitcoin's upside while using Bonds/Gold to crush the downside.
 
 ![image](./assets/portfolio_growth.png)
+
+### 04 | Institutional Risk Engine (VaR/CVaR & Monte Carlo)
+* **Core Tech:** Python, `yfinance`, `scipy.stats`, Monte Carlo Simulation.
+* **The Problem:** Standard metrics (Sharpe Ratio) often hide "Black Swan" risks in Crypto/Tech portfolios.
+* **The Solution:** Built a multi-model engine to calculate **95% Value at Risk** and **Expected Shortfall**, identifying a 3.30% average crash depth.
+* **Links:** [View Notebook](./04_Risk_Modeling/Risk_Modeling.ipynb) | [Live Colab Dashboard](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/04_Risk_Modeling/Risk_Modeling.ipynb)
