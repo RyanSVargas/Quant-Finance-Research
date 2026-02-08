@@ -24,8 +24,55 @@ This repository contains professional-grade financial models developed to analyz
 
 ![image](./assets/portfolio_growth.png)
 
-### 04 | Institutional Risk Engine (VaR/CVaR & Monte Carlo)
-* **Core Tech:** Python, `yfinance`, `scipy.stats`, Monte Carlo Simulation.
-* **The Problem:** Standard metrics (Sharpe Ratio) often hide "Black Swan" risks in Crypto/Tech portfolios.
-* **The Solution:** Built a multi-model engine to calculate **95% Value at Risk** and **Expected Shortfall**, identifying a 3.30% average crash depth.
-* **Links:** [View Notebook](./04_Risk_Modeling/Risk_Modeling.ipynb) | [Live Colab Dashboard](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/04_Risk_Modeling/Risk_Modeling.ipynb)
+## 04 | Institutional Risk Engine (VaR/CVaR & Monte Carlo)
+
+**The Problem:** Traditional performance metrics (Sharpe Ratio) assume a "Normal Distribution," ignoring "Fat Tail" risks in volatile assets like Crypto and Tech.
+**The Solution:** A multi-model audit engine quantifying the true "Risk of Ruin" using live market data.
+
+---
+
+### 1. Volatility & Tail Risk Analysis
+Calculates the "Kill Switch" for the portfolio—identifying how deep a crash goes beyond the typical daily move.
+
+| Metric | Result | Interpretation |
+| :--- | :--- | :--- |
+| **Daily VaR (95%)** | `-2.17%` | Max expected loss on a typical bad day. |
+| **Daily CVaR (95%)** | `-3.30%` | Average loss during an actual market crash. |
+
+![Volatility Analysis](./assets/Vol%20Check.png)
+
+---
+
+### 2. Monte Carlo Simulation (10,000 Paths)
+Projecting 10,000 "Alternative Futures" over the next 252 trading days to determine the probability of ending the year in a loss.
+
+| Metric | Result |
+| :--- | :--- |
+| **Prob. of being "In the Red"** | `19.97%` |
+| **Worst Case Scenario (0.1%)** | `$5,638.50` |
+
+![Monte Carlo Simulation](./assets/Monte%20Carlo.png)
+
+---
+
+### 3. Deterministic Stress Testing
+Manual shocks applied to the portfolio to simulate specific historical "Black Swan" events.
+
+| Scenario | Portfolio Impact |
+| :--- | :--- |
+| **2020 COVID Crash** | `-12.45%` |
+| **Crypto Winter** | `-18.20%` |
+| **2022 Tech Meltdown** | `-6.15%` |
+
+---
+
+### 🔗 Project Access
+* **Codebase:** [View Notebook](./04_Risk_Modeling/Risk_Modeling.ipynb)
+* **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/04_Risk_Modeling/Risk_Modeling.ipynb)
+
+#### Monte Carlo Simulation (10,000 Paths)
+![Monte Carlo Simulation](./assets/Monte%20Carlo.png)
+
+### 🔗 Project Access
+* **Codebase:** [View Notebook](./04_Risk_Modeling/Risk_Modeling.ipynb)
+* **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/04_Risk_Modeling/Risk_Modeling.ipynb)
