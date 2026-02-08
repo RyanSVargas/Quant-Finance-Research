@@ -16,3 +16,4 @@ This repository contains professional-grade financial models developed to analyz
 * **Goal:** Solve the high drawdown issues found in Project 1.
 * **Math Strategy:** Used **Inverse Volatility Weighting** ($1/\sigma$) to equalize risk across SPY, VAS.AX, Gold, and Bitcoin.
 * **Outcome:** Successfully reduced Max Drawdown compared to a single-asset strategy, creating a smoother "Equity Curve" for long-term capital growth.
+![Portfolio Growth Chart](portfolio_growth.png)
