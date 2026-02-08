@@ -12,5 +12,7 @@ This repository contains professional-grade financial models developed to analyz
 * **Risk Metrics:** Achieved an **Annualized Sharpe Ratio of 0.86**.
 * **Drawdown:** Identified a **Maximum Drawdown of -24.58%**, highlighting the strategy's volatility during market shifts.
 
-## Project 3: Risk-Parity Portfolio (Next Phase)
-* Integrating correlation data with volatility scaling to optimize asset allocation.
+## Project 3: Risk-Parity Engine (Diversified Fund)
+* **Goal:** Solve the high drawdown issues found in Project 1.
+* **Math Strategy:** Used **Inverse Volatility Weighting** ($1/\sigma$) to equalize risk across SPY, VAS.AX, Gold, and Bitcoin.
+* **Outcome:** Successfully reduced Max Drawdown compared to a single-asset strategy, creating a smoother "Equity Curve" for long-term capital growth.
