@@ -22,4 +22,4 @@ This repository contains professional-grade financial models developed to analyz
 * **Sharpe Ratio:** 1.61 (Professional grade risk-adjusted return)
 * **Logic:** Proved that Inverse-Volatility weighting can capture Bitcoin's upside while using Bonds/Gold to crush the downside.
 
-![image](./assets/image_name.png)
+![image](./assets/portfolio_growth.png)
