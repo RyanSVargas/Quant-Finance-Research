@@ -27,11 +27,12 @@ This repository contains professional-grade financial models developed to analyz
 ## Project 4: Institutional Risk Engine (VaR/CVaR & Monte Carlo)
 
 **The Problem:** Traditional performance metrics (Sharpe Ratio) assume a "Normal Distribution," ignoring "Fat Tail" risks in volatile assets like Crypto and Tech.
+
 **The Solution:** A multi-model audit engine quantifying the true "Risk of Ruin" using live market data.
 
 ---
 
-### 1. Volatility & Tail Risk Analysis
+### a) Volatility & Tail Risk Analysis
 Calculates the "Kill Switch" for the portfolio—identifying how deep a crash goes beyond the typical daily move.
 
 | Metric | Result | Interpretation |
@@ -43,7 +44,7 @@ Calculates the "Kill Switch" for the portfolio—identifying how deep a crash go
 
 ---
 
-### 2. Monte Carlo Simulation (10,000 Paths)
+### b) Monte Carlo Simulation (10,000 Paths)
 Projecting 10,000 "Alternative Futures" over the next 252 trading days to determine the probability of ending the year in a loss.
 
 | Metric | Result |
@@ -55,7 +56,7 @@ Projecting 10,000 "Alternative Futures" over the next 252 trading days to determ
 
 ---
 
-### 3. Deterministic Stress Testing
+### c) Deterministic Stress Testing
 Manual shocks applied to the portfolio to simulate specific historical "Black Swan" events.
 
 | Scenario | Portfolio Impact |
