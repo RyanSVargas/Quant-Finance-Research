@@ -24,7 +24,7 @@ This repository contains professional-grade financial models developed to analyz
 
 ![image](./assets/portfolio_growth.png)
 
-## 04 | Institutional Risk Engine (VaR/CVaR & Monte Carlo)
+## Project 4: Institutional Risk Engine (VaR/CVaR & Monte Carlo)
 
 **The Problem:** Traditional performance metrics (Sharpe Ratio) assume a "Normal Distribution," ignoring "Fat Tail" risks in volatile assets like Crypto and Tech.
 **The Solution:** A multi-model audit engine quantifying the true "Risk of Ruin" using live market data.
@@ -76,3 +76,17 @@ Manual shocks applied to the portfolio to simulate specific historical "Black Sw
 ### 🔗 Project Access
 * **Codebase:** [View Notebook](./04_Risk_Modeling/Risk_Modeling.ipynb)
 * **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/04_Risk_Modeling/Risk_Modeling.ipynb)
+
+## Project 5: Alpha Generation & Factor Attribution
+
+**The Problem:** Is the portfolio actually "outperforming," or is it just riding a bull market?
+**The Solution:** Applied a **Fama-French 3-Factor Model** to isolate Alpha from Beta, Size, and Value tilts.
+
+### 📈 Factor Audit Results
+* **Monthly Alpha:** `+3.21%` (p=0.006) — Statistically significant edge.
+* **Market Beta:** `1.81` — High-sensitivity growth profile.
+* **R-Squared:** `0.538` — Significant portion of returns driven by specific asset selection.
+
+![Factor Exposure](./assets/Factor_Exposure.png)
+
+
