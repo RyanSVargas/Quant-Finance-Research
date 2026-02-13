@@ -80,14 +80,33 @@ Manual shocks applied to the portfolio to simulate specific historical "Black Sw
 
 ## Project 5: Alpha Generation & Factor Attribution
 
-**The Problem:** Is the portfolio actually "outperforming," or is it just riding a bull market?
-**The Solution:** Applied a **Fama-French 3-Factor Model** to isolate Alpha from Beta, Size, and Value tilts.
+**The Problem:** Distinguishing between "Market Luck" (Beta) and "Investment Skill" (Alpha).
+**The Solution:** Implemented a **Fama-French 3-Factor Model** to regress portfolio excess returns against Market, Size (SMB), and Value (HML) factors.
 
-### 📈 Factor Audit Results
-* **Monthly Alpha:** `+3.21%` (p=0.006) — Statistically significant edge.
-* **Market Beta:** `1.81` — High-sensitivity growth profile.
-* **R-Squared:** `0.538` — Significant portion of returns driven by specific asset selection.
+---
 
-![Factor Exposure](./assets/Factor_Exposure.png)
+### a) Factor Exposure Analysis
+This model quantifies exactly what drives your returns. A positive Alpha with a low P-value proves the strategy's validity.
+
+| Metric | Coefficient | Significance (P>|t|) | Interpretation |
+| :--- | :--- | :--- | :--- |
+| **Monthly Alpha** | `0.032` | `0.006` | **Significant Skill:** 3.2% monthly outperformance. |
+| **Market Beta** | `1.809` | `0.000` | **High Volatility:** 81% more sensitive than S&P 500. |
+| **Size (SMB)** | `0.740` | `0.052` | **Small-Cap Tilt:** Exposure to high-growth, smaller assets. |
+| **Value (HML)** | `-0.176` | `0.511` | **Growth Focus:** Strongly decoupled from "Value" stocks. |
+
+![Factor Exposure](./assets/Alpha_Generation.png)
+
+---
+
+### b) Regression Diagnostics
+* **R-Squared:** `0.538` — Over 46% of returns are driven by idiosyncratic asset selection (Alpha) rather than broad market moves.
+* **Durbin-Watson:** `1.356` — Indicates moderate positive autocorrelation, typical in trending crypto markets.
+
+---
+
+### 🔗 Project Access
+* **Codebase:** [View Notebook](./05_Factor_Modeling/Alpha_Factor_Modeling.ipynb)
+* **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/05_Factor_Modeling/Alpha_Factor_Modeling.ipynb)
 
 
