@@ -95,7 +95,7 @@ This model quantifies exactly what drives your returns. A positive Alpha with a 
 | **Size (SMB)** | `0.740` | `0.052` | **Small-Cap Tilt:** Exposure to high-growth, smaller assets. |
 | **Value (HML)** | `-0.176` | `0.511` | **Growth Focus:** Strongly decoupled from "Value" stocks. |
 
-![Factor Exposure](./assets/Alpha_Generation.png)
+![Alpha Generation](./assets/Alpha_Generation.png)
 
 ---
 
