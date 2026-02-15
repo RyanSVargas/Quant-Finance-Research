@@ -1,4 +1,4 @@
-# Quantitative Asset Research (2025)
+# Quantitative Asset Research (2026)
 
 This repository contains professional-grade financial models developed to analyze market risk and algorithmic trading strategies.
 
