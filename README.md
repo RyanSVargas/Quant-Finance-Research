@@ -123,7 +123,7 @@ The model successfully differentiates between high-beta assets (Crypto) and safe
 | **S&P 500** | ~1.0% | 0.92 | **Mean Reverting:** Shocks are absorbed quickly by the market. |
 | **Gold** | ~0.8% | 0.96 | **Stable:** Highly predictable variance suitable for hedging. |
 
-![Volatility Comparison](./assets/Volatility_Comparison.png)
+![Volatility Comparison](./assets/Volatility_Comparison.PNG)
 
 ### 🔗 Project Access
 * **Codebase:** [View Notebook](./06_Volatility_Forecasting.ipynb)
