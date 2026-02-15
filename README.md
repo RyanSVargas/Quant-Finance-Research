@@ -128,4 +128,3 @@ The model successfully differentiates between high-beta assets (Crypto) and safe
 ### 🔗 Project Access
 * **Codebase:** [View Notebook](./06_Time_Series_Forecasting/Volatility_Forecasting.ipynb)
 * **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/06_Volatility_Forecasting.ipynb)
-
