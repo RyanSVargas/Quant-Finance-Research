@@ -109,4 +109,23 @@ This model quantifies exactly what drives your returns. A positive Alpha with a 
 * **Codebase:** [View Notebook](./05_Factor_Modeling/Alpha_Factor_Modeling.ipynb)
 * **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/05_Factor_Modeling/Alpha_Factor_Modeling.ipynb)
 
+## 06 | Time-Series Forecasting & Volatility Modeling
+
+**The Problem:** Standard risk models assume constant variance, failing to capture "panic" moments in the market.
+**The Solution:** Implemented a **GARCH(1,1)** process to model "Volatility Clustering" and forecast dynamic risk envelopes across multiple asset classes.
+
+### a) Volatility Regimes
+The model successfully differentiates between high-beta assets (Crypto) and safe havens (Gold), adapting the "Risk Envelope" (2-Sigma) in real-time.
+
+| Asset | Avg Daily Volatility | Volatility Persistence (Beta) | Interpretation |
+| :--- | :--- | :--- | :--- |
+| **Bitcoin** | ~3.5% | 0.85 | **Sticky Risk:** Volatility shocks linger long after the event. |
+| **S&P 500** | ~1.0% | 0.92 | **Mean Reverting:** Shocks are absorbed quickly by the market. |
+| **Gold** | ~0.8% | 0.96 | **Stable:** Highly predictable variance suitable for hedging. |
+
+![Volatility Comparison](./assets/Volatility_Comparison.png)
+
+### 🔗 Project Access
+* **Codebase:** [View Notebook](./06_Volatility_Forecasting.ipynb)
+* **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/06_Volatility_Forecasting.ipynb)
 
