@@ -128,3 +128,34 @@ The model successfully differentiates between high-beta assets (Crypto) and safe
 ### 🔗 Project Access
 * **Codebase:** [View Notebook](./06_Time_Series_Forecasting/Volatility_Forecasting.ipynb)
 * **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/RyanSVargas/Quant-Finance-Research/blob/main/06_Time_Series_Forecasting/Volatility_Forecasting.ipynb)
+
+## 07 | Multi-Asset Monte Carlo Simulation & Terminal Risk
+
+**The Problem:** Financial forecasting often relies on linear models that ignore market stochasticity. This leaves portfolios exposed to tail risks that standard "target prices" cannot quantify.
+**The Solution:** Implemented a **Monte Carlo Simulation** using **Geometric Brownian Motion (GBM)** to generate 1,000+ potential price paths and derive terminal probability distributions.
+
+---
+
+### a) Path-Dependent Projections & Uncertainty Cones
+The engine solves the Stochastic Differential Equation (SDE) for a diverse asset universe. By modeling the "diffusion" component (random shocks), the simulation visualizes the increasing variance over a 30-day horizon.
+
+* **High-Beta Assets (BTC, NVDA, TSLA):** Demonstrate significant "fanning," indicating a wide range of probable outcomes.
+* **Stable Assets (GLD, AAPL):** Exhibit tighter cones, signifying higher predictability and lower path-dependency.
+
+### b) Terminal Risk Distribution (VaR Analysis)
+The project utilizes terminal price histograms to identify the **5% Value at Risk (VaR)**. This allows for a rigorous mathematical definition of "worst-case" scenarios at a 95% confidence level.
+
+![Multi-Asset GBM Simulation](./assets/GBM.png)
+
+---
+
+### c) Quantitative Framework
+* **SDE Solver:** $S_t = S_0 \exp((\mu - 0.5\sigma^2)t + \sigma W_t)$
+* **Statistical Verification:** Confirmed log-normal terminal distributions across 1,000+ iterations.
+* **Parameters:** Annualized drift and volatility are dynamically derived from rolling 1-year daily returns.
+
+---
+
+### 🔗 Project Access
+* **Codebase:** [View Notebook](./07_GBM_Risk_Analysis.ipynb)
+* **Interactive:** [Open in Google Colab](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/07_GBM_Risk_Analysis.ipynb)
